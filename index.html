@@ -1,225 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Rishi Kothari</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume - Rishi Kothari</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 12px;
+        color: #333;
+        max-width: 900px;
+        line-height: 1.3;
+        margin: auto;
+        padding-top: 2px;
+      }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-      color: #333;
-      max-width: 900px;
-      line-height: 1.3;
-      margin: auto;
-      padding-top: 2px;
-    }
+      h1 {
+        font-size: 1.3rem;
+        color: #1f4e79;
+      }
 
-    h1 {
-      font-size: 1.5rem;
-      color: #1F4E79;
-    }
+      .section {
+        margin-bottom: 10px;
+      }
 
-    .section {
-      margin-bottom: 12px;
-    }
+      .section h2 {
+        font-size: 1rem;
+        border-bottom: 2px solid #1f4e79;
+        margin-bottom: 0.4rem;
+        color: #1f4e79;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-    .section h2 {
-      font-size: 1rem;
-      border-bottom: 2px solid #1F4E79;
-      margin-bottom: 0.4rem;
-      color: #1F4E79;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+      .contact p {
+        font-size: 0.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
 
-    .contact p {
-      font-size: 0.9rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-    }
+      .contact i {
+        color: #1f4e79;
+      }
 
-    .contact i {
-      color: #1F4E79;
-    }
+      ul {
+        padding-left: 1.2rem;
+        list-style-type: square;
+      }
 
-    ul {
-      padding-left: 1.2rem;
-      list-style-type: square;
-    }
+      li {
+        margin-bottom: 2px;
+      }
 
-    li {
-      margin-bottom: 2px;
-    }
+      a {
+        color: #4a00e0;
+        text-decoration: none;
+        pointer-events: auto;
+        font-weight: 500;
+      }
 
-    a {
-      color: #4A00E0;
-      text-decoration: none;
-      font-weight: 500;
-    }
+      a:hover {
+        text-decoration: underline;
+      }
 
-    a:hover {
-      text-decoration: underline;
-    }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.1rem;
+      }
 
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-    }
+      .col {
+        flex: 1;
+        min-width: 200px;
+      }
 
-    .col {
-      flex: 1;
-      min-width: 200px;
-    }
+      .education-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap:2px;
+      }
 
-    .education-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+      .education-block {
+        flex: 1;
+        max-width: 350px;
+        background: #f9f9f9;
+        padding: 5px;
+        border-left: 3px solid #1f4e79;
+      }
 
-    .education-block {
-      flex: 1;
-      min-width: 250px;
-      background: #f9f9f9;
-      padding: 10px;
-      border-left: 3px solid #1F4E79;
-    }
+      .project-item {
+        margin-bottom: 12px;
+      }
 
-    .project-item {
-      margin-bottom: 12px;
-    }
+      .job-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-weight: bold;
+      }
 
-    .job-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-weight: bold;
-    }
+      .date {
+        font-size: 0.75rem;
+        color: #666;
+      }
+    </style>
+  </head>
 
-    .date {
-      font-size: 0.75rem;
-      color: #666;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>Rishi Kothari</h1>
-  <p style="font-weight: bold; color: #555; margin-bottom: 10px;">MERN Stack Developer</p>
-
-  <div class="section contact">
-    <p>
-      <span><i class="fa-solid fa-envelope"></i> rishuright14@gmail.com</span> |
-      <span><i class="fa-solid fa-phone"></i> +91-7201071233</span> |
-      <span><i class="fa-brands fa-github"></i> <a href="https://github.com/rishi14k" target="_blank">github/rishi14k</a></span> |
-      <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/rishi-kothari-12b074293" target="_blank">linkedin/rishi</a></span> |
-      <span><i class="fa-solid fa-globe"></i> <a href="https://k-rishi-mern.onrender.com" target="_blank">Portfolio</a></span>
+  <body>
+    <h1>Rishi Kothari</h1>
+    <p style="font-weight: bold; color: #555; margin-bottom: 10px">
+      MERN Stack Developer
     </p>
-  </div>
 
-  <div class="section summary">
-    <h2>Summary</h2>
-    <p>Detail-oriented MERN Stack Developer with 6 months of internship experience and a 9.30 CGPA. Proven ability to build real-time applications using Socket.io and secure RESTful APIs. </p>
-  </div>
-
-  <div class="section experience">
-    <h2>Professional Experience</h2>
-    <div class="job-item">
-      <div class="job-title">
-        <span>MERN Stack Intern — [Glitchover]</span>
-        <span class="date">6 Months (JUNE-DECEMBER-2026)</span>
-      </div>
-     <ul>
-  <li>Worked as a <strong>MERN Stack Developer</strong> building scalable features using MongoDB, Express.js, React.js, and Node.js.</li>
-  <li>Implemented <strong>JWT authentication</strong> and <strong>real-time updates</strong> using <strong>Socket.io</strong>.</li>
-  <li>Developed an <strong>Influencer Analytics Dashboard</strong> and a <strong>Blog CMS</strong> with SEO optimization.</li>
-  <li>Integrated <strong>OBS streaming links</strong> and automated link generation.</li>
-  <li>Tested applications using <strong>Jest</strong>.</li>
-</ul>
+    <div class="section contact">
+      <p>
+        <span><i class="fa-solid fa-envelope"></i> rishuright14@gmail.com</span>
+        | <span><i class="fa-solid fa-phone"></i> +91-7201071233</span> |
+        <span
+          ><i class="fa-brands fa-github"></i>
+          <a href="https://github.com/rishi14k" target="_blank"
+            >github/rishi14k</a
+          ></span
+        >
+        |
+        <span
+          ><i class="fa-brands fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/rishi-kothari-12b074293"
+            target="_blank"
+            >linkedin/rishi</a
+          ></span
+        >
+        |
+        <span
+          ><i class="fa-solid fa-globe"></i>
+          <a href="https://k-rishi-mern.onrender.com" target="_blank"
+            >Portfolio</a
+          ></span
+        >
+      </p>
     </div>
-  </div>
 
-  <div class="section skills">
-    <h2>Technical Skills</h2>
-    <div class="flex">
-      <div class="col">
-        <strong>Frontend:</strong>
+    <div class="section summary">
+      <h2>Summary</h2>
+      <p>
+        Full-Stack Developer specializing in MERN stack development, real-time web applications, and AI-based solutions. Built multiple scalable projects including live tracking systems and personalized learning platforms.
+      </p>
+    </div>
+
+    <div class="section experience">
+      <h2>Professional Experience</h2>
+      <div class="job-item">
+        <div class="job-title">
+          <span>MERN Stack Intern — [Glitchover]</span>
+          <span class="date">6 Months (JUNE-DECEMBER-2026)</span>
+        </div>
         <ul>
-          <li>React.js, JavaScript, Tailwind CSS</li>
-          <li>HTML5, CSS3, GSAP, PYTHON</li>
-        </ul>
-      </div>
-      <div class="col">
-        <strong>Backend & DB:</strong>
-        <ul>
-          <li>Node.js, Express.js, Socket.io</li>
-          <li>MongoDB, Mongoose, JWT Auth</li>
-        </ul>
-      </div>
-      <div class="col">
-        <strong>Tools:</strong>
-        <ul>
-          <li>Git, GitHub, VS Code</li>
-          <li>Thunder Client, Postman, Render</li>
+          <li>
+            Worked as a <strong>MERN Stack Developer</strong> building scalable
+            features using MongoDB, Express.js, React.js, and Node.js.
+          </li>
+          <li>
+            Implemented <strong>JWT authentication</strong> and
+            <strong>real-time updates</strong> using <strong>Socket.io</strong>.
+          </li>
+          <li>
+            Developed an <strong>Influencer Analytics Dashboard</strong> and a
+            <strong>Blog CMS</strong> with SEO optimization.
+          </li>
+          <li>
+            Integrated <strong>OBS streaming links</strong> and automated link
+            generation.
+          </li>
+          <!-- <li>Tested applications using <strong>Jest</strong>.</li> -->
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="section projects">
-    <h2>Key Projects</h2>
-    <ul>
-      <li class="project-item">
-        <strong>Real-Time Bus Tracking System</strong> – A full-stack solution for live fleet monitoring.
-        <br>
-        – Integrated <strong>Leaflet.js/Google Maps API</strong> for dynamic map visualization and also <strong>PWA</strong> vesrion.<br>
-– Utilized <strong>Socket.io</strong> to deliver low-latency live location updates across <strong>User, Driver, and Admin dashboards</strong>. <br>
-        <a href="https://github.com/Rishi14k/findBus" target="_blank">GitHub</a> | <a href="https://trackbus-jeja.onrender.com/" target="_blank">Live Demo</a>
-      </li>
+    <div class="section skills">
+      <h2>Technical Skills</h2>
+      <div class="flex">
+        <div class="col">
+          <strong>Frontend:</strong>
+          <ul>
+            <li>React.js, REDUX, JavaScript, Tailwind</li>
+            <li>HTML5, CSS3, GSAP, PYTHON</li>
+          </ul>
+        </div>
+        <div class="col">
+          <strong>Backend & DB:</strong>
+          <ul>
+            <li>Node.js, Express.js, Socket.io</li>
+            <li>MongoDB, Mongoose, JWT Auth</li>
+          </ul>
+        </div>
+        <div class="col">
+          <strong>Tools:</strong>
+          <ul>
+            <li>Git, GitHub, VS Code</li>
+            <li>Thunder Client, Postman, Render</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <li class="project-item">
-        <strong>IdeaHub</strong> – A community platform for sharing startup innovations.
-        <br>
-        – Built secure <strong>JWT authentication</strong> and interactive features like likes/comments.<br>
-        – Enhanced UX with <strong>Framer Motion</strong> for modern, fluid transitions.<br>
-        <a href="https://github.com/Rishi14k/IdeaHub_project" target="_blank">GitHub</a> | <a href="https://ideahub-uj1o.onrender.com" target="_blank">Live Demo</a>
-      </li>
+    <div class="section projects">
+      <h2>Key Projects</h2>
+      <ul>
+        <li class="project-item">
+          <strong>SkillOrbit</strong>– AI-Powered Learning Platform 
+          <br />
+          – Built an <strong>AI roadmap generator</strong> to create customized
+          learning paths based on user goals and skill level.<br />
+          – Implemented
+          <strong>task tracking, weekly missions, and progress system</strong>
+          to improve learning consistency.<br />
+          – Integrated an <strong>AI Assistant</strong> for guidance, doubt
+          solving, and learning support.<br />
+          <!-- – Developed responsive UI with
+          <strong>React, Tailwind CSS</strong> and scalable backend using
+          <strong>Node.js, Express, MongoDB</strong>.<br /> -->
+          –
+          <strong>1st Place Winner – Avishkar 2.0 (SOCCA Level)</strong>.<br />
+
+          <a href="https://github.com/Rishi14k/PathForgeAI" target="_blank"
+            >GitHub</a
+          >
+          |
+          <a href="https://skillorbit-7ylj.onrender.com/" target="_blank"
+            >Live Demo</a
+          >
+          |
+          <a>MERN</a>
+        </li>
+
+        <li class="project-item">
+          <strong>Real-Time Bus Tracking System</strong> – A full-stack solution
+          for live fleet monitoring.
+          <br />
+          – Integrated <strong>Leaflet.js/Google Maps API</strong> for dynamic
+          map visualization and also <strong>PWA</strong> vesrion.<br />
+          – Utilized <strong>Socket.io</strong> to deliver low-latency live
+          location updates across
+          <strong>User, Driver, and Admin dashboards</strong>. <br />
+          <a href="https://github.com/Rishi14k/findBus" target="_blank"
+            >GitHub</a
+          >
+          |
+          <a href="https://trackbus-jeja.onrender.com/" target="_blank"
+            >Live Demo</a
+          >
+          |
+          <a>MERN</a>
+        </li>
+
+        
 <li class="project-item">
-  <strong>Hostel DMS (2025)</strong> – Daily grocery and vegetable management system for hostels.
-  <br>
-  – Built a <strong>web-based system</strong> to manage daily grocery and vegetable entries with structured data handling.<br>
-  – Enabled <strong>create, edit, and update</strong> of records with secure and efficient workflows.<br>
-  – Added <strong>Excel file download</strong> functionality for offline access and reporting.<br>
-   <a href="https://github.com/Rishi14k/vegetablePurchase" target="_blank">GitHub</a> | <a href="https://dataentry-wotc.onrender.com/" target="_blank">Live Demo</a>
-</li>
-    </ul>
-  </div>
+  <strong>Animated Website Clone</strong> – A modern animated website inspired
+  by the K-72 design.
+  <br />
 
-  <div class="section education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-block">
-        <p><strong>BSc CS & IT</strong><br>Silver Oak University, Ahmedabad<br>CGPA: <b>9.30</b> | 2023 – Present</p>
-      </div>
-      <div class="education-block">
-        <p><strong>12th (HSC)</strong><br>MJCKR, Gujarat Board<br>Percentage: <b>88.54%</b> | 2023</p>
-      </div>
+  – Built smooth <strong>GSAP-based animations</strong> and
+  <strong>scroll-triggered effects</strong> for interactive user experience.<br />
+
+  – Developed using <strong>React component architecture</strong> with fully
+  responsive layouts for all devices.<br />
+
+  <a href="https://github.com/Rishi14k/K-72_GSAP" target="_blank">GitHub</a>
+  |
+  <a href="https://k-72-gsap.onrender.com/" target="_blank">Live Demo</a>
+  |
+  <a>React • GSAP • CSS</a>
+</li>
+
+        <!-- <li class="project-item">
+          <strong>Hostel DMS (2025)</strong> – Daily grocery and vegetable
+          management system for hostels.
+          <br />
+          – Built a <strong>web-based system</strong> to manage daily grocery
+          and vegetable entries with structured data handling.<br />
+          – Enabled <strong>create, edit, and update</strong> of records with
+          secure and efficient workflows.<br />
+          – Added <strong>Excel file download</strong> functionality for offline
+          access and reporting.<br />
+          <a
+            href="https://github.com/Rishi14k/vegetablePurchase"
+            target="_blank"
+            >GitHub</a
+          >
+          |
+          <a href="https://dataentry-wotc.onrender.com/" target="_blank"
+            >Live Demo</a
+          >
+          |
+          <a href="">MERN</a>
+        </li> -->
+      </ul>
+    </div>
+
+<div class="section education">
+  <h2>Education</h2>
+
+  <div class="education-container">
+    <div class="education-block">
+      <p>
+        <strong>BSc CS & IT</strong><br />
+        Silver Oak University, Ahmedabad<br />
+        CGPA: <b>9.30</b> | 2023 – Present
+      </p>
+    </div>
+
+    <div class="education-block">
+      <p>
+        <strong>12th (HSC)</strong><br />
+        MJCKR, Gujarat Board<br />
+        Percentage: <b>88.54%</b> | 2023
+      </p>
+    </div>
+
+    <div class="education-block">
+      <p>
+        <strong>10th (SSC)</strong><br />
+        MJCKR, Gujarat Board<br />
+        Percentage: <b>90.67%</b> | 2021
+      </p>
     </div>
   </div>
-<!-- 
+</div>
+</div>
+    <!-- 
   <div class="section">
     <h2>Certifications</h2>
     <div class="flex">
@@ -232,6 +353,50 @@
     </div>
   </div> -->
 
-</body>
 
+ <button id="downloadBtn" onclick="downloadPDF()">
+  Download Resume
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+  function downloadPDF() {
+    const button = document.getElementById("downloadBtn");
+
+    // Hide button before generating PDF
+    button.style.display = "none";
+
+    const element = document.body;
+
+    const opt = {
+      margin: 0.2,
+      filename: "Rishi_Resume.pdf",
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: {
+        scale: 2,
+      },
+      jsPDF: {
+        unit: "in",
+        format: "a4",
+        orientation: "portrait",
+      },
+      pagebreak: {
+        mode: ["avoid-all", "css", "legacy"],
+      },
+    };
+
+    html2pdf()
+      .set(opt)
+      .from(element)
+      .save()
+      .then(() => {
+        // Show button again after download
+        button.style.display = "block";
+      });
+  }
+</script> 
+  </body>
 </html>
+
+
